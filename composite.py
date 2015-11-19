@@ -14,6 +14,7 @@ Usage:
 
 """
 
+
 # ----------------------------- #
 #   class definitions           #
 # ----------------------------- #
@@ -29,7 +30,7 @@ class FileObject(object):
     def display(self, depth=0):
         print '{depth:}{name:}'.format(
             depth=' ' * depth,
-            name = self.name
+            name=self.name
         )
 
     # hierarchy operations
