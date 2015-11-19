@@ -1,0 +1,51 @@
+- name: "Derek Carr"
+  poslist: [QB]
+  stats:
+    completions: 29
+    incompletions: 14
+    pass_yards: 302
+    pass_tds: 2
+    p300: 0.5
+    interceptions: 2
+    rushes: 2
+    rush_yds: 12
+    sacked: 2
+- name: "C. J. Spiller"
+  poslist: [RB]
+  stats:
+    rushes: 8
+    rush_yds: 24
+    rec_yds: 10
+    receptions: 1
+    fumbles: 1
+- name: "Justin Forsett"
+  poslist: [RB]
+  stats:
+    rushes: 14
+    rush_yds: 53
+    rec_yds: 11
+    receptions: 2
+- name: "Brandin Cooks"
+  poslist: [WR]
+  stats:
+    rushes: 1
+    rush_yds: 11
+    rec_yds: 98
+    rec_tds: 2
+    receptions: 5
+    retd40: 1
+    retd50: 1
+- name: "Demaryius Thomas"
+  poslist: [WR]
+  stats:
+    rec_yds: 71
+    receptions: 7
+- name: "Rob Gronkowski"
+  poslist: [TE]
+  stats:
+    rec_yds: 113
+    rec_tds: 1
+    receptions: 5
+    retd40: 1
+    retd50: 1
+    rey100: 1
