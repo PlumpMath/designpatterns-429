@@ -28,7 +28,7 @@ class FileObject(object):
 
     # file operations
     def display(self, depth=0):
-        print '{depth:}{name:}'.format(
+        return '{depth:}{name:}'.format(
             depth=' ' * depth,
             name=self.name
         )
@@ -52,13 +52,14 @@ class Directory(FileObject):
 
     # file operations
     def display(self, depth=0):
-        print '{depth:}{name:} (dir)'.format(
+        d = ['{depth:}{name:} (dir)'.format(
             depth=' ' * depth,
             name=self.name
-        )
+        )]
 
-        for elem in self.elements:
-            elem.display(depth=depth + 2)
+        d += [elem.display(depth=depth + 2) for elem in self.elements]
+
+        return '\n'.join(d)
 
     # hierarchy operations
     def add(self, f):
@@ -109,21 +110,21 @@ def main():
     pr0n.add(mlp)
 
     # print
-    root.display()
+    print root.display()
 
     # remove a directory
     print "\n{:*<80}".format("*** quick, some one's coming! ")
     usr.remove(pr0n)
 
     # print
-    root.display()
+    print root.display()
 
     # remove a file
     print "\n{:*<80}".format("*** obama took ur gun ")
     etc.remove(fshoot)
 
     # print
-    root.display()
+    print root.display()
 
 
 if __name__ == '__main__':
